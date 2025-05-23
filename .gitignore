@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+
+# Build artifacts
+dist/
+build/
+
+# Docker
+docker-compose.override.yml
+*.local
+
+# IDEs
+.vscode/
+.idea/
+
+# Dependency lock (optional)
+package-lock.json
