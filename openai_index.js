@@ -108,6 +108,11 @@ wss.on('connection', (ws) => {
   });
 });
 
+app.get('/ping', (req, res) => {
+  console.log('pong')
+  res.status(200).send('pong');
+});
+
 server.listen(8000, () => {
   console.log('Server running on http://localhost:8000');
 });
