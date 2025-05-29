@@ -108,12 +108,12 @@ wss.on('connection', (ws) => {
   });
 });
 
-app.get('/ping', (req, res) => {
+app.get('/api/ping', (req, res) => {
   console.log('pong')
   res.status(200).send('pong');
 });
 
-app.get('/createSocket', (req, res) => {
+app.get('/api/createSocket', (req, res) => {
   console.log('creating socket')
   res.status(200).send('https://ec2.ravisahu.in/ws/audio');
 });
