@@ -113,6 +113,12 @@ app.get('/ping', (req, res) => {
   res.status(200).send('pong');
 });
 
+app.get('/createSocket', (req, res) => {
+  console.log('creating socket')
+  res.status(200).send('https://ec2.ravisahu.in/ws/audio');
+});
+
+
 server.listen(8000, () => {
   console.log('Server running on http://localhost:8000');
 });
