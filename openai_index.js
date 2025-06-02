@@ -116,9 +116,9 @@ app.get('/api/ping', (req, res) => {
 app.get('/api/createSocket', (req, res) => {
   console.log('creating socket')
   res.status(200).json({
-    url: 'https://ec2.ravisahu.in/ws/audio'
+    url: 'wss://ec2.ravisahu.in/ws/audio'
   });
-  //res.status(200).send('https://ec2.ravisahu.in/ws/audio');
+  //res.status(200).send('wss://ec2.ravisahu.in/ws/audio');
 });
 
 
